@@ -1,0 +1,29 @@
+.career-page {
+  padding: 20px;
+}
+
+.job-listings {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.job-listings th, .job-listings td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.job-listings th {
+  background-color: #f2f2f2;
+}
+
+.job-listings button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.job-listings button:hover {
+  background-color: #45a049;
+}

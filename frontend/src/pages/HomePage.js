@@ -1,5 +1,6 @@
-import React from "react";
-import "../styles/HomePage.css";
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import '../styles/HomePage.css'; // Ensure this path is correct
 
 const HomePage = () => {
   return (
@@ -9,12 +10,12 @@ const HomePage = () => {
         <div className="header-content">
           <img src="logo.png" alt="Logo" className="logo" />
           <nav className="nav-links">
-            <a href="/">Home</a>
-            <a href="drdo">Drdo </a>
-            <a href="/about">About</a>
-            <a href="/services">Services</a>
-            <a href="/carrers">carrers</a>
-            <a href="/contact us ">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/drdo">DRDO</Link>
+            <Link to="/about">About</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/careers">Careers</Link> {/* Updated to Link component */}
+            <Link to="/contact">Contact</Link> {/* Updated to Link component */}
           </nav>
           <form className="search-bar">
             <input type="text" placeholder="Search..." />
@@ -67,9 +68,9 @@ const HomePage = () => {
       <footer className="footer">
         <p>&copy; 2024 DRDO. All rights reserved.</p>
         <nav>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
-          <a href="/contact">Contact Us</a>
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/terms">Terms of Service</Link>
+          <Link to="/contact">Contact Us</Link>
         </nav>
       </footer>
     </div>
