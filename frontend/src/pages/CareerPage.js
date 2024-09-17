@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/CareerPage.css';
+import { Link } from 'react-router-dom';
 
 const CareerPage = () => {
   return (
     <div className="career-page">
       <h1>Career Opportunities</h1>
-      {/* Add your job listings and application logic here */}
       <table className="job-listings">
         <thead>
           <tr>
@@ -20,13 +20,13 @@ const CareerPage = () => {
             <td>Software Engineer</td>
             <td>Delhi</td>
             <td>Engineering</td>
-            <td><button>Apply</button></td>
+            <td><Link to="/apply"><button>Apply</button></Link></td>
           </tr>
           <tr>
             <td>Data Scientist</td>
             <td>Bangalore</td>
             <td>Data Science</td>
-            <td><button>Apply</button></td>
+            <td><Link to="/apply"><button>Apply</button></Link></td>
           </tr>
           {/* Add more job rows as needed */}
         </tbody>

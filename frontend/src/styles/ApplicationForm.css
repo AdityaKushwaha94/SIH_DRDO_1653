@@ -1,0 +1,84 @@
+/* General Styles */
+.application-form {
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 20px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #003366; /* Dark Blue */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #003366; /* Dark Blue */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.form-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-nav button {
+  background-color: #003366; /* Dark Blue */
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  padding: 15px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-nav button:hover {
+  background-color: #002244; /* Darker Blue */
+}
+
+.form-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners for each section */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 1.2em;
+  color: #003366; /* Dark Blue */
+}
+
+.form-section input,
+.form-section textarea,
+.form-section select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for input fields */
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  background-color: #003366; /* Dark Blue */
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  padding: 15px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #002244; /* Darker Blue */
+}
