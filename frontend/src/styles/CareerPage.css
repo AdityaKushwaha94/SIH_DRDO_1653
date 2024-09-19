@@ -27,3 +27,136 @@
 .job-listings button:hover {
   background-color: #45a049;
 }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Career Page Container */
+.career-page {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #003366; /* Dark Blue */
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.navbar-search button {
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Career Page Heading */
+.career-page h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 40px 0;
+  color: #003366;
+}
+
+/* Job Listings Table */
+.job-listings {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.job-listings th,
+.job-listings td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.job-listings th {
+  background-color: #003366;
+  color: white;
+  font-size: 18px;
+}
+
+.job-listings td {
+  font-size: 16px;
+}
+
+.job-listings button {
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.job-listings button:hover {
+  background-color: #004d99;
+}
+
+/* Footer */
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}

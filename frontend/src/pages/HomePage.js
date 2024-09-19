@@ -1,77 +1,82 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import '../styles/HomePage.css'; // Ensure this path is correct
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/HomePage.css'; 
 
 const HomePage = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
+
   return (
-    <div className="homepage">
-      {/* Header Section */}
-      <header className="header">
-        <div className="header-content">
-          <img src="logo.png" alt="Logo" className="logo" />
-          <nav className="nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/drdo">DRDO</Link>
-            <Link to="/about">About</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/careers">Careers</Link> {/* Updated to Link component */}
-            <Link to="/contact">Contact</Link> {/* Updated to Link component */}
-          </nav>
-          <form className="search-bar">
-            <input type="text" placeholder="Search..." />
-            <button type="submit">Search</button>
-          </form>
+    <div className="homepage-container">
+      {/* Navigation Bar */}
+      <nav className="navbar">
+        <div className="navbar-logo">DRDO</div>
+        <ul className="navbar-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/drdo">DRDO</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/careers">Careers</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+        <div className="navbar-search">
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
         </div>
+        <div className="navbar-profile">
+          <button onClick={toggleDropdown} className="dropdown-button">
+            Profile
+            <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>▼</span>
+          </button>
+          {isDropdownOpen && (
+            <div className="dropdown-menu">
+              <Link to="/login" className="dropdown-item">Login</Link>
+              <Link to="/signup" className="dropdown-item">Signup</Link>
+              <Link to="/guest" className="dropdown-item">View as Guest</Link>
+            </div>
+          )}
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <header className="hero-section">
+        <h1>Welcome to DRDO</h1>
+        <p>Innovation and Technology for National Security</p>
+        <button className="cta-button">Explore Our Work</button>
       </header>
 
-      {/* Main Content Section */}
-      <main className="main-content">
-        <section className="hero">
-          <h1>Welcome to the DRDO Project</h1>
-          <p>This is the sample homepage for the DRDO project.</p>
-        </section>
-
-        {/* News Section */}
-        <section className="news">
-          <h2>Latest News</h2>
-          <div className="news-item">
-            <h3>New Technology Unveiled</h3>
-            <p>DRDO has introduced a new cutting-edge technology designed to enhance national security.</p>
+      {/* News Section */}
+      <section className="news-section">
+        <h2>Latest News</h2>
+        <div className="news-cards">
+          <div className="news-card">
+            <h3>New Defense Technology</h3>
+            <p>DRDO unveils cutting-edge technology...</p>
           </div>
-          <div className="news-item">
-            <h3>Successful Test Flight</h3>
-            <p>Our latest missile test has been successfully completed, marking a significant milestone in defense technology.</p>
+          <div className="news-card">
+            <h3>Research Breakthrough</h3>
+            <p>New advancements in missile systems...</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Ambition Section */}
-        <section className="ambition">
-          <h2>Our Ambition</h2>
-          <p>Our goal is to push the boundaries of technology and innovation to ensure national safety and advancement. We are committed to excellence in every project we undertake, aiming to set new standards in defense technology.</p>
-        </section>
+      {/* Ambition Section */}
+      <section className="ambition-section">
+        <h2>Our Ambition</h2>
+        <p>DRDO is committed to research, development, and delivering innovative defense solutions for national security.</p>
+      </section>
 
-        {/* Motivational Projects Section */}
-        <section className="projects">
-          <h2>Motivational Projects</h2>
-          <div className="project-item">
-            <h3>Project A</h3>
-            <p>A groundbreaking initiative aimed at improving our defense systems through innovative technology and research.</p>
-          </div>
-          <div className="project-item">
-            <h3>Project B</h3>
-            <p>An ambitious project focused on developing next-generation tools and systems to enhance national security.</p>
-          </div>
-        </section>
-      </main>
-
-      {/* Footer Section */}
+      {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2024 DRDO. All rights reserved.</p>
-        <nav>
-          <Link to="/privacy">Privacy Policy</Link>
-          <Link to="/terms">Terms of Service</Link>
-          <Link to="/contact">Contact Us</Link>
-        </nav>
+        <div className="footer-content">
+          <p>Follow Us on Social Media</p>
+          <div className="social-icons">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">X</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+          </div>
+          <p className="made-by">Made by Sentinels</p>
+        </div>
       </footer>
     </div>
   );
