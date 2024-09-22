@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/ApplicationForm.css';  // Ensure this path is correct
+import '../styles/ApplicationForm.css'; // Ensure this path is correct
+
 const ApplicationForm = () => {
   // State to manage the current section of the form
   const [currentSection, setCurrentSection] = useState('personalInfo');

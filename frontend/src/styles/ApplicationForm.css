@@ -1,29 +1,40 @@
-/* General Styles */
 .application-form {
   width: 70%;
   margin: auto;
   padding: 30px;
-  background-color: #f4f4f4;
-  border-radius: 20px; /* Rounded corners for the form */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Gradient background */
+  border-radius: 20px;
+  border: 2px solid #003366; /* Noticeable border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.application-form:hover {
+  transform: scale(1.02); /* Slight scaling on hover */
 }
 
 h1 {
   text-align: center;
   color: #003366; /* Dark Blue */
-  font-size: 2.5em;
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-size: 2.8em;
+  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
 h2 {
-  color: #003366; /* Dark Blue */
-  font-size: 2em;
+  color: #003366;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .form-nav {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
@@ -31,30 +42,35 @@ h2 {
   background-color: #003366; /* Dark Blue */
   color: #fff;
   border: none;
-  border-radius: 25px; /* Rounded button */
-  padding: 15px 25px;
-  font-size: 1.1em;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .form-nav button:hover {
   background-color: #002244; /* Darker Blue */
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .form-section {
   margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 15px; /* Rounded corners for each section */
+  padding: 25px;
+  border-radius: 15px;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #003366; /* Stylish left border */
+  background-image: url('https://www.transparenttextures.com/patterns/squairy-light.png'); /* Subtle pattern */
 }
 
 .form-section label {
   display: block;
   margin: 15px 0 5px;
   font-size: 1.2em;
-  color: #003366; /* Dark Blue */
+  color: #003366;
+  font-family: 'Poppins', sans-serif;
 }
 
 .form-section input,
@@ -64,21 +80,37 @@ h2 {
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 8px; /* Rounded corners for input fields */
+  border-radius: 8px;
   font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section input:focus,
+.form-section textarea:focus,
+.form-section select:focus {
+  border-color: #003366; /* Blue focus border */
+  box-shadow: 0 0 8px rgba(0, 51, 102, 0.3); /* Glow effect */
 }
 
 button[type="submit"] {
   background-color: #003366; /* Dark Blue */
   color: #fff;
   border: none;
-  border-radius: 25px; /* Rounded button */
+  border-radius: 25px;
   padding: 15px 25px;
   font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button[type="submit"]:hover {
   background-color: #002244; /* Darker Blue */
+  transform: translateY(-3px); /* Button rises slightly */
+}
+
+button:disabled {
+  background-color: #cccccc; /* Disabled button color */
+  cursor: not-allowed;
 }
