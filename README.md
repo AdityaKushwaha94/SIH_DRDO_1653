@@ -1,4 +1,14 @@
-# DRDO SIH 1653 - Recruitment & Interview System
+# EvalMate: AI-assisted Recruitment & Interview System
+
+<p>
+  <img src="https://img.shields.io/badge/React-087EA4?style=flat-square&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" />
+  <img src="https://img.shields.io/badge/Smart_India_Hackathon-2023-FF6B35?style=flat-square" alt="SIH 2023" />
+</p>
 
 ## Overview
 A comprehensive recruitment and interview management system built for DRDO (Defense Research and Development Organization) as part of Smart India Hackathon problem statement 1653. The system features AI-powered interview analysis, role-based authentication, and a complete candidate management workflow.
@@ -46,8 +56,8 @@ A comprehensive recruitment and interview management system built for DRDO (Defe
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/AdityaKushwaha94/SIH_DRDO_1653.git
-cd SIH_DRDO_1653
+git clone https://github.com/AdityaKushwaha94/EvalMate.git
+cd EvalMate
 ```
 
 ### 2. Backend Setup
